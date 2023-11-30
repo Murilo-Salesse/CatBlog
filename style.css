@@ -89,6 +89,7 @@ main {
 
 .input-thumbs h1 {
   margin-top: 2.5rem;
+
   color: #202024;
 
   font-size: 2.4rem;
@@ -98,13 +99,13 @@ main {
 }
 
 .input-thumbs img {
-
   background: var(--bckg-blue);
   padding: 12px;
   border-radius: 50%;
 }
 
 .paragraph {
+  width: 38rem;
   margin-top: 3.1rem;
   color: #121214;
 
@@ -184,15 +185,17 @@ footer p {
   line-height: normal;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   .main {
     display: grid;
+    justify-content: center;
     grid-template-areas: 
-    "section section sidebar"
-    "section section sidebar"
-    "footer footer footer";
+    "section section section sidebar"
+    "section section section sidebar"
+    "footer footer footer footer";
   }
   .sct-1 {
+    width: 80rem;
     grid-area: section;
   }
   .input-all {
@@ -204,20 +207,44 @@ footer p {
 
   main {
     padding: 0px 10rem;
-    gap: 2rem;
+    gap: 3.4rem;
     width: 100%;
     margin: 4.4rem auto;
+  }
+
+  .paragraph {
+    width: 80rem;
   }
 
   .input-thumbs {
     flex-direction: row;
     align-items: flex-end;
-    gap: 16rem;
+    gap: 36rem;
   }
 
   .thumbs-wrapper {
     display: flex;
     gap: 1.2rem;
+  }
+
+  .wrapper-item {
+    width: 40rem;
+    height: auto;
+  }
+
+  .wrapper-item img{
+    max-width: 15rem;
+    aspect-ratio: 16/9;
+    height: 8.4rem;
+  }
+
+  .wrapper-info {
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .wrapper-info p {
+    font-size: 1.3rem;
   }
 
   .input-all {
